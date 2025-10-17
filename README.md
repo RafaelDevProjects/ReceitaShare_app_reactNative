@@ -81,6 +81,20 @@ npm install
 # Execute o projeto
 npx expo start
 ```
+## 📊 Requisitos Atendidos (CP)
+
+### Navegação (4 pontos)
+- ✅ **Tab Navigation** com duas abas funcionais
+- ✅ **Stack Navigation** para detalhes das receitas
+
+### Formulário e Validação (4 pontos)  
+- ✅ **Campos**: Nome, Ingredientes, Tempo de Preparo, Geladeira
+- ✅ **Validação com useState** para campos obrigatórios
+- ✅ **Feedback visual** para o usuário
+
+### Demonstração (2 pontos)
+- ✅ **Vídeo e imagens** do funcionamento do app
+
 
 ### 👥 Integrantes do Grupo
 Rafael De Almeida Sigoli - RM554019
