@@ -80,3 +80,11 @@ npm install
 
 # Execute o projeto
 npx expo start
+```
+
+### 👥 Integrantes do Grupo
+Rafael De Almeida Sigoli - RM554019
+
+Giovanna Franco Gaudino Rodrigues - RM553701
+
+Rafael Jorge Del Padre - RM552765
