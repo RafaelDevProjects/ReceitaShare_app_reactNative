@@ -70,7 +70,7 @@ Desenvolvimento de um aplicativo mobile como parte do Check Point (CP) da discip
 ### Instalação
 ```bash
 # Clone o repositório
-git clone [url-do-repositorio]
+git clone https://github.com/RafaelDevProjects/ReceitaShare_app_reactNative.git
 
 # Entre na pasta do projeto
 cd ReceitasFavoritas
