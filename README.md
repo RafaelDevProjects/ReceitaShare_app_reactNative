@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# 📱 App de Receitas Favoritas
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um aplicativo mobile desenvolvido em React Native com Expo para gerenciar suas receitas favoritas, permitindo adicionar, visualizar e organizar receitas de forma prática e intuitiva.
 
-## Get started
+## 🎯 Objetivo do Projeto
 
-1. Install dependencies
+Desenvolvimento de um aplicativo mobile como parte do Check Point (CP) da disciplina **Desenvolvimento Mobile** do 1º Semestre da FIAP.
 
-   ```bash
-   npm install
-   ```
+## ✨ Funcionalidades
 
-2. Start the app
+- **📋 Listagem de Receitas** - Visualize todas as suas receitas cadastradas
+- **➕ Adicionar Nova Receita** - Formulário com validação para cadastrar novas receitas
+- **🔍 Detalhes da Receita** - Visualização completa dos detalhes de cada receita
+- **💾 Persistência Local** - Dados salvos localmente no dispositivo
+- **✅ Validação de Formulário** - Verificação em tempo real dos dados inseridos
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tecnologias Utilizadas
 
-In the output, you'll find options to open the app in a
+- **React Native** - Framework para desenvolvimento mobile
+- **Expo** - Plataforma para desenvolvimento React Native
+- **TypeScript** - Superset JavaScript com tipagem estática
+- **Expo Router** - Roteamento baseado em arquivos
+- **Async Storage** - Armazenamento local de dados
+- **React Hooks** - Gerenciamento de estado e efeitos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 Navegação
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Tab Navigation
+- **Todas as Receitas** - Lista com todas as receitas cadastradas
+- **Adicionar Receita** - Formulário para cadastrar novas receitas
 
-## Get a fresh project
+### Stack Navigation  
+- **Detalhes da Receita** - Tela modal com informações completas da receita selecionada
 
-When you're ready, run:
+## 🎨 Interface
 
+### Telas Principais
+
+1. **Tela Inicial (Todas as Receitas)**
+   - Lista de receitas em cards
+   - Indicador de tempo de preparo
+   - Badge para receitas que precisam de geladeira
+   - Lista vazia com mensagem educativa
+
+2. **Formulário de Adição**
+   - Campo para nome da receita (obrigatório)
+   - Área de texto para ingredientes (separados por vírgula)
+   - Campo numérico para tempo de preparo (obrigatório)
+   - Switch para indicar se precisa de geladeira
+   - Validação em tempo real
+
+3. **Detalhes da Receita**
+   - Nome da receita em destaque
+   - Tempo de preparo e informações de armazenamento
+   - Lista completa de ingredientes
+
+## ✅ Validações Implementadas
+
+- **Nome da Receita**: Campo obrigatório não vazio
+- **Tempo de Preparo**: Número positivo obrigatório
+- **Feedback Visual**: Mensagens de erro e estilos diferenciados para campos inválidos
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Node.js instalado
+- Expo CLI instalado globalmente
+- Emulador Android/iOS ou dispositivo físico com Expo Go
+
+### Instalação
 ```bash
-npm run reset-project
-```
+# Clone o repositório
+git clone [url-do-repositorio]
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Entre na pasta do projeto
+cd ReceitasFavoritas
 
-## Learn more
+# Instale as dependências
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Execute o projeto
+npx expo start
